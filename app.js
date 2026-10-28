@@ -22,7 +22,7 @@
     title: 'General Consultant',
     email: 'abhi.jay@example.com',
     phone: '+44 7123 456789',
-    linkedin: 'https://www.linkedin.com/in/username'
+    linkedin: 'www.linkedin.com/in/abhinavjayaraj'
   };
 
   const fieldNames = ['first', 'last', 'title', 'email', 'phone', 'linkedin'];
