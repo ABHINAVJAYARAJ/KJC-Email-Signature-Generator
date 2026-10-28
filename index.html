@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f9fc">
+  <meta name="description" content="Create a King's Junior Consulting branded email signature. Free, private, no account needed. Copy to Gmail or Outlook.">
+  <title>KJC Email Signature Generator | King's Junior Consulting</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#generator">Skip to signature generator</a>
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="KJC Email Signature Generator home">
+        <span class="brand-logo-wrap"><img src="assets/kjc-logo.png" alt="King's Junior Consulting" width="60" height="60"></span>
+        <span class="brand-label">KJC <span>Email Signature Generator</span></span>
+      </a>
+      <div class="header-actions">
+        <nav class="header-nav" aria-label="Main navigation">
+          <a href="#generator">Generator</a>
+          <a href="#installation">Instructions</a>
+          <a href="#about">About</a>
+        </nav>
+        <button class="theme-switch" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <span id="theme-label">Light mode</span>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <section class="intro" aria-labelledby="intro-title">
+      <div>
+        <div class="eyebrow"><span class="eyebrow-dot"></span> KJC TEAM TOOL <span class="eyebrow-rule"></span> 01 / 02</div>
+        <h1 id="intro-title">Create your KJC <span>email signature.</span></h1>
+        <p>One consistent, professional signature for every member of King's Junior Consulting.<span class="intro-next-line">Enter your details and you're ready to go.</span></p>
+      </div>
+      <aside class="privacy-notice" aria-label="Privacy notice">
+        <span class="privacy-info-symbol" aria-hidden="true">ⓘ</span>
+        <p>Your contact details are processed in your browser and are not uploaded or stored by this generator. Only your theme preference is saved on your device.</p>
+      </aside>
+    </section>
+
+    <section id="generator" class="generator-grid" aria-label="Generate email signature">
+      <div class="panel form-panel">
+        <div class="panel-heading">
+          <div class="heading-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20v-2a7 7 0 0 1 14 0v2H5Z"/></svg></div>
+          <div><h2>Your details</h2><p>Enter your information to create your signature.</p></div>
+        </div>
+        <form id="signature-form" novalidate>
+          <div class="field-grid">
+            <div class="field">
+              <label for="first-name">First name <span class="required">*</span></label>
+              <input id="first-name" name="first" type="text" autocomplete="given-name" maxlength="60" placeholder="e.g. Abhi" required>
+              <small class="field-error" id="first-error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="last-name">Last name <span class="required">*</span></label>
+              <input id="last-name" name="last" type="text" autocomplete="family-name" maxlength="60" placeholder="e.g. Jay" required>
+              <small class="field-error" id="last-error" aria-live="polite"></small>
+            </div>
+            <div class="field span-full">
+              <label for="job-title">Job title <span class="required">*</span></label>
+              <input id="job-title" name="title" type="text" autocomplete="organization-title" maxlength="110" placeholder="e.g. General Consultant" required>
+              <small class="field-error" id="title-error" aria-live="polite"></small>
+            </div>
+            <div class="field span-full">
+              <label for="email">Email address <span class="required">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" maxlength="254" placeholder="e.g. abhi.jay@example.com" required>
+              <small class="field-error" id="email-error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number <span class="optional">Optional</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="40" placeholder="e.g. +44 7123 456789">
+              <small class="field-error" id="phone-error" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="linkedin">LinkedIn URL <span class="optional">Optional</span></label>
+              <input id="linkedin" name="linkedin" type="url" autocomplete="url" inputmode="url" maxlength="300" placeholder="linkedin.com/in/username">
+              <small class="field-error" id="linkedin-error" aria-live="polite"></small>
+            </div>
+          </div>
+          <button class="button button-primary generate-button" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 1.8 6.2L20 11l-6.2 1.8L12 19l-1.8-6.2L4 11l6.2-1.8L12 3ZM19 18v4m-2-2h4"/></svg>
+            Generate signature
+          </button>
+        </form>
+      </div>
+
+      <div class="panel preview-panel" id="preview-panel">
+        <div class="panel-heading preview-heading">
+          <div class="heading-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12s3.7-7 10-7 10 7 10 7-3.7 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <div><h2>Email signature preview</h2><p>This is how your signature will look in emails.</p></div>
+          <div class="viewport-tabs" role="group" aria-label="Preview width">
+            <button id="desktop-view" class="viewport-button is-active" type="button" aria-label="Desktop preview" aria-pressed="true" title="Desktop preview"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M8 22h8m-4-4v4"/></svg></button>
+            <button id="mobile-view" class="viewport-button" type="button" aria-label="Mobile preview" aria-pressed="false" title="Mobile preview"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></button>
+          </div>
+        </div>
+        <div class="preview-surface">
+          <div id="signature-preview" aria-label="KJC email signature example"></div>
+        </div>
+        <p class="preview-status" id="preview-state" role="status" aria-live="polite">Showing example details. Fill in the fields to personalise.</p>
+        <div class="export-actions">
+          <button type="button" id="copy-button" class="button button-primary"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg> Copy signature</button>
+          <button type="button" id="download-button" class="button button-secondary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M4 17v3h16v-3"/></svg> Download HTML</button>
+        </div>
+        <p class="preview-hint">The signature stays white in both website themes for better email compatibility.</p>
+        <div id="action-message" class="action-message" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="installation" class="installation-section" aria-labelledby="installation-heading">
+      <div class="section-header"><div><p class="section-kicker">02 / GET SET UP</p><h2 id="installation-heading">Install your signature</h2><p>Copy the signature above, then follow the guide for your email app.</p></div></div>
+      <div class="guide-grid">
+        <article class="panel guide-card">
+          <div class="guide-heading"><span class="provider-art"><img src="assets/gmail.svg" alt="" width="38" height="38" loading="lazy"></span><div><h3>Gmail <span>(Web)</span></h3><p>Works with Google Workspace and personal Gmail.</p></div></div>
+          <ol class="guide-steps">
+            <li>In Gmail, click <strong>Settings</strong> (gear) and select <strong>See all settings</strong>.</li>
+            <li>Under <strong>General</strong>, find <strong>Signature</strong>.</li>
+            <li>Click <strong>Create new</strong> and name it “KJC”.</li>
+            <li>Paste your formatted signature into the box (<strong>Ctrl+V</strong> or <strong>⌘+V</strong>).</li>
+            <li>Select defaults for new emails and replies.</li>
+            <li>Scroll down and click <strong>Save Changes</strong>.</li>
+          </ol>
+          <a href="https://support.google.com/mail/answer/8395?hl=en-GB" class="guide-link" target="_blank" rel="noopener noreferrer">Official Gmail help <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="panel guide-card">
+          <div class="guide-heading"><span class="provider-art"><img src="assets/outlook.svg" alt="" width="38" height="38" loading="lazy"></span><div><h3>Microsoft Outlook <span>(Web / New)</span></h3><p>Works with Outlook on the web and the new Outlook app.</p></div></div>
+          <ol class="guide-steps">
+            <li>In Outlook, go to <strong>Settings → Accounts → Signatures</strong>.</li>
+            <li>Click <strong>Add signature</strong> and call it “KJC”.</li>
+            <li>Paste the formatted signature (<strong>Ctrl+V</strong> or <strong>⌘+V</strong>).</li>
+            <li>Choose your default signature for new messages and replies.</li>
+            <li>Click <strong>Save</strong>.</li>
+            <li>Send yourself an email to confirm everything displays correctly.</li>
+          </ol>
+          <a href="https://support.microsoft.com/en-us/office/how-to-add-and-change-an-email-signature-in-outlook" class="guide-link" target="_blank" rel="noopener noreferrer">Official Outlook help <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <div class="classic-tip"><strong>Using classic Outlook for Windows?</strong> Go to <strong>File → Options → Mail → Signatures → New</strong>. Paste the signature, pick your defaults, then select OK. Menus vary by version.</div>
+    </section>
+
+    <section id="about" class="about-section panel" aria-label="About this tool">
+      <div class="about-image"><img src="assets/kjc-logo.png" width="130" height="130" alt="KJC official logo"></div>
+      <div>
+        <p class="section-kicker">ABOUT THIS TOOL</p>
+        <p>Built for internal use of KJC members to create clean, matching HTML email signatures.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© KJC · Internal team resource</span><span>King's Junior Consulting Email Signature Generator</span></footer>
+
+  <div class="dialog-backdrop" id="copy-dialog" hidden>
+    <div class="copy-dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="Close confirmation">×</button>
+      <span class="dialog-check" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg></span>
+      <h2 id="dialog-title">Signature copied!</h2>
+      <p id="dialog-description">Your formatted signature is on your clipboard. Paste it into Gmail or Outlook to finish setting up.</p>
+      <button id="dialog-done" class="button button-primary" type="button">Got it</button>
+    </div>
+  </div>
+</body>
+</html>
